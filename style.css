@@ -97,11 +97,15 @@ i{
 }
 
 .clearAll{
-  display: flex;
-  justify-content: flex-end;
-  padding: 9.5px 2.8px;
+  /* padding: 9.5px 2.8px; */
   cursor: pointer;
   font-size: 1rem;
+}
+
+.footerItems{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 1.5rem;
 }
 
 .clearAll:hover{
