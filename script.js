@@ -12,9 +12,7 @@ function handlerSubmit(e){
   let inputItem = document.querySelector('input');
   //if input is not empty, add the value using helper function
   if(inputItem.value!=''){
-     e.preventDefault();
-    addTodoList(inputItem.value);    
-   
+    addTodoList(inputItem.value);
   }  
   inputItem.value="";
 }
