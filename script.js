@@ -4,7 +4,7 @@ document.getElementById('clear').addEventListener('click',handlerClear);
 
 // let default task pending count be 0
 let count=0;
-
+let deleteFlagCount=0;
 //Event handlers 
 function handlerSubmit(e){
   //prevents default form action
@@ -80,7 +80,7 @@ function deleteTodoList(e) {
   todoItem.classList.add('todo-item-fall');
    
   //decrementing the pending tasks count
-  if(count>0){
+  if(todoItem.style.textDecoration !='line-through' && count>0){
     count--;
     document.querySelector(".count").innerHTML = `${count}`;
   }
