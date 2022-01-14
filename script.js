@@ -59,8 +59,13 @@ function checkTodoList(e) {
   let todoItem = e.target.parentNode;
   if(todoItem.style.textDecoration =='line-through'){
    todoItem.style.textDecoration = 'none';
+  count++;
+  document.querySelector('.count').innerHTML = `${count}`;
+
   } else{
     todoItem.style.textDecoration='line-through';
+    count--;
+    document.querySelector(".count").innerHTML = `${count}`;
   }
 }
 
